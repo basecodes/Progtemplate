@@ -1,0 +1,2 @@
+classname,field,methods
+test,field1 int,method1 args int|method2 args ...interface{}

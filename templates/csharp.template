@@ -1,0 +1,19 @@
+{{start file}}
+using System;
+
+namespace {{=file.obj.namespace}}{
+    public class {{=file.obj.classname}}{
+    {{
+    for field in file.obj.fields:
+        writeln("\t public %s %s;" % (field.type,field.name))
+    }}
+
+    {{
+    for func in file.obj.methods:
+        writeln("\t public %s %s (%s) {"% (func.returntype,func.methodname,func.args))
+        writeln("\t\t Console.WriteLine('Hello World')")
+        writeln("\t }")
+    }}
+    }
+}
+{{end cs }}

@@ -1,0 +1,9 @@
+{{start file}}
+class {{=file.obj.classname}}{
+public:
+{{
+for func in file.obj.function:
+    writeln("\t%s %s (%s);"% (func.returntype,func.methodname,func.args))
+}}
+};
+{{end cpp }}

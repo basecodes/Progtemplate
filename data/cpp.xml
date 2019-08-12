@@ -1,0 +1,15 @@
+<obj>
+    <classname>Test</classname>
+
+    <function>
+            <returntype>void</returntype>
+            <methodname>func1</methodname>
+            <args>int name</args>
+    </function>
+
+   <function>
+            <returntype>int</returntype>
+            <methodname>func2</methodname>
+            <args>int name</args>
+   </function>
+</obj>

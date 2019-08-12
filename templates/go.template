@@ -1,0 +1,20 @@
+{{start file }}
+type {{=file[1].classname}} struct{
+    {{=file[1].field}}
+}
+
+{{
+    splits = file[1].methods.split("|")
+    for i in range(len(splits)):
+        sp = splits[i].split(" ")
+        file[1]["method_" + str(i)] = sp
+}}
+
+func (this *{{=file[1].classname}}) {{write(file[1].method_0[0])}} ({{write(file[1].method_0[1])}} {{write(file[1].method_0[2])}}){
+
+}
+
+func (this *{{=file[1].classname}}) {{write(file[1].method_1[0])}} ({{write(file[1].method_1[1])}} {{write(file[1].method_1[2])}}){
+
+}
+{{end go }}

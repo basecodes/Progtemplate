@@ -1,0 +1,24 @@
+{
+  "obj": {
+    "namespace": "mynamespace",
+    "classname": "test",
+    "fields": [
+      {
+        "type": "int",
+        "name": "field1"
+      }
+    ],
+    "methods": [
+      {
+        "returntype": "void",
+        "methodname": "method1",
+        "args": "int args"
+      },
+      {
+        "returntype": "void",
+        "methodname": "method2",
+        "args": "params object[] objs"
+      }
+    ]
+  }
+}

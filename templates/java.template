@@ -1,0 +1,17 @@
+{{start file}}
+import java.lang.*;
+
+public class {{=file.obj.classname}}{
+    {{
+    for field in file.obj.fields:
+        writeln("public %s %s;" % (field.type,field.name))
+    }}
+
+    {{
+    for func in file.obj.methods:
+        writeln("public %s %s (%s) {"% (func.returntype,func.methodname,func.args))
+        writeln("\t Console.WriteLine('Hello World')")
+        writeln("}")
+    }}
+}
+{{end java }}
