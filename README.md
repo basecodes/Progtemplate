@@ -34,7 +34,7 @@
 执行当前替换之前，会先执行writeln语句，writeln方法会写入一行，类似于println打印语句，会把当前位置替换成写入的内容。编程替换需要懂一点python基本语法。
 
 ## 用法
-1. 编写模板：
+1. 编写模板(test.template)：
 ```
 {{start file}}
 public class  {{=file.class.name}}{
@@ -43,7 +43,7 @@ public class  {{=file.class.name}}{
 {{end cs}}
 ```
 
-2. 编写数据以json为例：
+2. 编写数据以json为例(test.json)：
 ```json
 {
     "class": {
