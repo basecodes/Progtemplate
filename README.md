@@ -31,7 +31,7 @@
 ```
 {{writeln(file.obj.name + file.obj.description)}}
 ```
-执行当前替换之前，会先执行writeln语句，writeln方法会写入一行，类似于println打印语句，会把当前位置替换成写入的内容。编程替换需要懂一点python基本语法。
+执行当前替换之前，会先执行writeln语句，writeln方法会写入一行，类似于println打印语句，会把当前位置替换成写入的内容。编程替换需要懂一点python基本语法。(写时候注意python格式问题)
 
 ## 用法
 1. 编写模板(test.template)：
