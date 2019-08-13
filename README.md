@@ -55,4 +55,4 @@ public class  {{=file.class.name}}{
 3. 生成模型，执行execute.py文件。
 
 ## 环境
-Python 3.4
+python 3.7+
